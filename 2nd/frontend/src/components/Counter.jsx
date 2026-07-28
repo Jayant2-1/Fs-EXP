@@ -34,7 +34,7 @@ const Counter = () => {
             <button onClick={inc}>Increment</button>
             <button onClick={dec}>Decrement</button>
             <button onClick={re}>Reset</button>
-            <p style={{fontSize: "12px", color: "#888"}}>Open the browser console to see useEffect logs</p>
+            
         </div>
     )
 }
