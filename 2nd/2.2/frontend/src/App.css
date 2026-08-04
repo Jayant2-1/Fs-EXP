@@ -1,0 +1,36 @@
+.container {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+form {
+  margin-top: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.registered {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #eef6ee;
+  border: 1px solid #c6e0c6;
+  border-radius: 6px;
+}
+
+.registered h2 {
+  margin-top: 0;
+}
