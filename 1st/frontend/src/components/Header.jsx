@@ -3,6 +3,8 @@ import { useDashboard } from '../context/DashboardContext'
 function Header() {
   const { toggleSidebar } = useDashboard()
 
+  console.log('Header rendered')
+
   return (
     <header className="dashboard-header">
       <button

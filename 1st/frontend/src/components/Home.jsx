@@ -1,12 +1,11 @@
 import { useDashboard } from '../context/DashboardContext'
 
 function Home() {
-  const { students, courses, attendanceRecords } = useDashboard()
+  const { students, courses } = useDashboard()
   const totalStudents = students.length
   const totalCourses = courses.length
-  const avgAttendance = Math.round(
-    attendanceRecords.reduce((sum, r) => sum + r.attendancePercentage, 0) / attendanceRecords.length
-  )
+
+  console.log('Home rendered')
 
   return (
     <>
@@ -19,10 +18,6 @@ function Home() {
         <div className="stat-card">
           <div className="stat-label">Active Courses</div>
           <div className="stat-value">{totalCourses}</div>
-        </div>
-        <div className="stat-card">
-          <div className="stat-label">Average Attendance</div>
-          <div className="stat-value">{avgAttendance}%</div>
         </div>
       </div>
 

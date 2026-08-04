@@ -2,6 +2,9 @@ import { useDashboard } from '../context/DashboardContext'
 
 function AttendanceList() {
   const { attendanceRecords: records } = useDashboard()
+
+  console.log(`AttendanceList rendered (${records.length} records)`)
+
   return (
     <section className="attendance-list">
       {records.map(record => {
@@ -19,18 +22,10 @@ function AttendanceList() {
               </div>
             </div>
             <p className="attendance-detail"><strong>Course:</strong> {record.course}</p>
-            <div className="attendance-bar-container">
-              <div className="attendance-label">Attendance Rate</div>
-              <div className="attendance-bar">
-                <div 
-                  className="attendance-fill" 
-                  style={{ width: `${record.attendancePercentage}%`, backgroundColor: statusColor }}
-                ></div>
-              </div>
-              <div className="attendance-percentage">{record.attendancePercentage}%</div>
-            </div>
+            <p className="attendance-detail"><strong>Attendance:</strong> {record.attendancePercentage}%</p>
             <p className="attendance-detail"><strong>Classes Attended:</strong> {record.classesAttended} / {record.classesTotal}</p>
             <p className="attendance-detail"><strong>Last Present:</strong> {record.lastPresent}</p>
+            
           </article>
         )
       })}

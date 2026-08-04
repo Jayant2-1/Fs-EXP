@@ -3,6 +3,8 @@ import { useDashboard } from '../context/DashboardContext'
 function Sidebar() {
   const { showSidebar, activeView, setActiveView } = useDashboard()
 
+  console.log(`Sidebar rendered (visible: ${showSidebar})`)
+
   if (!showSidebar) return null
 
   const navItems = [

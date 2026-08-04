@@ -2,6 +2,9 @@ import { useDashboard } from '../context/DashboardContext'
 
 function CourseList() {
   const { courses, students } = useDashboard()
+
+  console.log(`CourseList rendered (${courses.length} courses)`)
+
   return (
     <section className="course-list">
       {courses.map(course => {

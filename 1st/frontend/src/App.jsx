@@ -11,6 +11,8 @@ import Footer from './components/Footer'
 function AppContent() {
   const { activeView } = useDashboard()
 
+  console.log(`AppContent render — activeView = "${activeView}"`)
+
   return (
     <div className="dashboard-root">
       <Header />

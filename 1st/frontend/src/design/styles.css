@@ -256,26 +256,6 @@ body {
   font-size: 0.95rem;
 }
 
-.attendance-mini {
-  margin-top: 12px;
-  padding-top: 12px;
-  border-top: 1px solid rgba(196, 170, 162, 0.14);
-}
-
-.attendance-mini-bar {
-  height: 6px;
-  background: rgba(196, 170, 162, 0.12);
-  border-radius: 3px;
-  overflow: hidden;
-  margin-bottom: 8px;
-}
-
-.attendance-mini-fill {
-  height: 100%;
-  border-radius: 3px;
-  transition: width 300ms ease;
-}
-
 .attendance-mini-text {
   margin: 0;
   font-size: 0.85rem;
@@ -506,37 +486,6 @@ body {
   border: 1px solid;
   text-transform: capitalize;
   white-space: nowrap;
-}
-
-.attendance-bar-container {
-  margin: 14px 0;
-}
-
-.attendance-label {
-  font-size: 0.85rem;
-  color: var(--muted);
-  margin-bottom: 6px;
-}
-
-.attendance-bar {
-  height: 10px;
-  background: rgba(196, 170, 162, 0.12);
-  border-radius: 5px;
-  overflow: hidden;
-  margin-bottom: 6px;
-}
-
-.attendance-fill {
-  height: 100%;
-  border-radius: 5px;
-  transition: width 300ms ease;
-}
-
-.attendance-percentage {
-  font-size: 0.9rem;
-  color: var(--primary);
-  font-weight: 700;
-  text-align: right;
 }
 
 .attendance-detail {

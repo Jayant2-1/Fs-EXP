@@ -4,6 +4,8 @@ import StudentCard from './StudentCard'
 function StudentList() {
   const { students } = useDashboard()
 
+  console.log(`StudentList rendered (${students.length} students)`)
+
   if (!students || students.length === 0) {
     return <p className="student-list-empty">No students available.</p>
   }
